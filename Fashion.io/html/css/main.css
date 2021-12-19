@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+body {
+    margin: 0px;
+    background-color: white;
+    font-family: "Arvo";
+    
+}
+
+.main {
+    padding: 16px;
+    margin-top: 30px;
+    height: 3000px; /* Used in this example to enable scro*/
+    margin-right: 5px;
+  }
+
+
+
+h1 {
+    padding: 14px ;
+    font-size: 50px;
+    margin-top: -8px;
+    margin-left: 230%;
+    background-color: #9D0E26;
+    color:  #181A1B;
+    width: 87%;
+    border-radius: 50px;
+    height: 50px;
+    font-family: "Arvo";
+}
+
+h3 {
+    font-size: 30px;
+    margin-left: 380px;
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 40px;
+    margin-top: 5px;
+    margin-left: 38%;
+}
+
+
+
+  /*Werbung*/
+
+
+#Werbung {
+    font-size: 30px;
+    color: white;
+    font-family: "Arvo";
+    border: thick solid black;
+    background-image: url(../bilder/background.PNG);
+    background-size: 100% 100%;
+  
+}
+    
+
+
+#Werbungstext {
+    margin-left: 20%;
+    margin-top: 5px;
+    font-family: "Arvo";
+    filter: none;
+}
+
+#Werbung a{
+    text-decoration: none;
+    margin-left:40%;
+    background-color: #9D0E26;
+    font-size: 25px;
+    color: white;
+    font-family: "Arvo";
+}
+
+#Werbung a:hover {
+    background-color: white;
+    color: #9D0E26;
+}
+
+img {
+    margin-left: 0%;
+    margin-top: 100px;
+}
+
+img.gender {
+    transition: transform 0.2s;
+  
+}
+
+img.gender:hover {
+    transform: scale(1.2,1.2);
+}
+
+#gender {
+    text-decoration: none;
+    color: black;
+
+}
+
+#searchbar {
+    border: thin solid black;
+    margin-top: 100px;
+    margin-left: 40%;
+    background-color: gray;
+    height: 30px;
+    width: 400px;
+    color: black;
+}
+
+input::placeholder {
+    color: black;
+    overflow: hidden;
+    border: black;
+    opacity: 0.5;
+}
+
+
+/*obere Navbar*/
+
+
+  
+  .navbar a {
+    
+    display: inline-block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+  }
+  
+  .navbar a:hover {
+   background: lightgrey;
+    color: black;
+  }
+  
+ 
+
+#right {
+  position: relative;
+  margin-left: 625%;
+}
+
+
+
+#warenkorb {
+  position: relative;
+  margin-left: 480%;
+}
+
+
+
+
+/*Content:tabelle*/
+
+
+
+table {
+    border-spacing: 20px;
+    width: 100%;
+    line-height: 300%;
+}
+
+td {
+    height: 400px;
+}
+
+#Werbung {
+    height: 250px;
+    background-color: #1C6D98;
+}
+
+td a:hover {
+    color: white;
+}
+
+td a{
+   position: relative;
+   margin-left: 33%;
+   text-decoration: none;
+   font-size: 20px;
+   
+}
+
+
+
+
+
+
+
+
+/*Hovereffekte für die Hoodies*/
+
+
+
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .container img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition:  ease;
+    opacity: 0;
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover img{
+    opacity: 0.5;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  #text {
+    
+    color: black;
+    font-size: 16px;
+    
+  }
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Animationen für die Navbars*/
+
+
+
+#logo a {
+    transition-duration: 2s;
+    transition-delay: 1s;
+    
+}
+#logo img {
+   
+     max-block-size: 50px;
+     margin-left: 50%;
+     position: absolute;
+    
+}
+
+.navbar {
+    display: flex;
+    z-index: 2;
+    
+}
+
+.navbar a::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #9D0E26;
+    position: absolute;
+    left: 0;
+    bottom: +10px;
+    transition: 0.5s;
+   
+}
+
+.navbar a:hover::after {
+    width: 100%;
+    color: white;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+   margin-top: -10px;
+    position: relative;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+/*Footer*/
+
+
+
+.footer {
+    background-color: #cfcdcb;
+    list-style: none;
+    text-decoration: none;
+    width: 100%;
+    height: 250px;
+}
+
+
+
+.footer li {
+    list-style: none;
+    text-decoration: none;
+}
+
+#logo a {
+    transition-duration: 2s;
+    transition-delay: 1s;
+    
+}
+#logo img {
+     max-block-size: 50px;
+     margin-left: 50%;
+     position: absolute;
+    
+}
+
+#abstand {
+    margin-block-start: 50px;
+}
+
+
+
+
+
+
+
+
+#nav-container {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  margin-top: 0%;
+  
+  
+}
+#nav-container .bg {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 70px);
+  visibility: hidden;
+  opacity: 1;
+  transition: .3s;
+ 
+}
+
+#nav-container * {
+  visibility: visible;
+}
+
+.button {
+    z-index: 3;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    -webkit-appearance: none;
+    border: 0;
+    background: transparent;
+    border-radius: 0;
+    height: 70px;
+    width: 30px;
+    cursor: pointer;
+    pointer-events: auto;
+    margin-left: 25px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+
+.icon-bar {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #aaa;
+  transition: .3s;
+}
+.icon-bar + .icon-bar {
+  margin-top: 5px;
+}
+
+#nav-container:focus-within .button {
+  pointer-events: none;
+}
+#nav-container:focus-within .icon-bar:nth-of-type(1) {
+  transform: translate3d(0,8px,0) rotate(45deg);
+}
+#nav-container:focus-within .icon-bar:nth-of-type(2) {
+  opacity: 0;
+}
+#nav-container:focus-within .icon-bar:nth-of-type(3) {
+  transform: translate3d(0,-8px,0) rotate(-45deg);
+}
+
+
+#nav-content {
+  margin-top: 70px;
+  padding: 20px;
+  width: 90%;
+  max-width: 300px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: calc(100% - 70px);
+  background: lightgrey;
+  z-index: 1;
+  transform: translateX(-100%);
+  transition: transform .3s;
+  will-change: transform;
+  
+}
+
+#nav-content ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#nav-content li a {
+  padding: 10px 5px;
+  display: block;
+  text-transform: uppercase;
+  transition: color .1s;
+}
+
+#nav-content li a:hover {
+  color: #BF7497;
+}
+
+
+
+.small a {
+  font-size: 12px;
+  font-weight: 400;
+  color: #888;
+}
+
+
+#nav-container:focus-within #nav-content {
+  transform: none;
+}
+
+#minu{
+    margin-left: 0%;
+}
+a {
+  color: currentColor;
+  transition: .2s ease-in-out;
+}
+
+
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    margin-top: 0px;
+    padding: 0;
+    z-index: 1;
+    background-color: lightgrey;
+    border-bottom: thin solid grey;
+    
+  }
+  
